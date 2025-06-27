@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ryckflix - Anime Privado</title>
+  <style>
+    /* Seu CSS aqui */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ff6f61;
+    }
+    main {
+      padding: 20px;
+    }
+    /* Outros estilos seus */
+  </style>
+
+  <script>
+    (function() {
+      const senhaCorreta = prompt("Digite a senha para acessar o site:");
+      if (senhaCorreta !== "horimiya@") {
+        alert("Acesso negado!");
+        document.body.innerHTML = "<h1 style='color: red; text-align: center; margin-top: 50px;'>Acesso negado!</h1>";
+        throw new Error("Senha incorreta");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header>Ryckflix</header>
+  <main>
+    <h2>Seja bem-vindo ao seu site de animes privado!</h2>
+    <p>Aqui você pode organizar seus animes favoritos, assistir e curtir sem ninguém bisbilhotar.</p>
+
+    <!-- Seu conteúdo de anime aqui, tipo lista, imagens, links -->
+
+  </main>
+</body>
+</html>
